@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    min-width: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+nav{
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
+    display: block;
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 80px;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items:center;  /* Vertical alignment*/
+    justify-content:end; /* Horizontal alignment*/
+}
+
+.nav-button,.sidebar-button{
+    color: black;
+    padding: 0 15px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    background-color: #A2A2A2;
+    border-radius: 20px;
+    height: 30px;
+    box-shadow: 3px 3px 5px rgb(1, 1, 1, 0.2);
+    
+}
+
+nav a:hover{
+    background-color: rgba(0, 255, 68, 1);
+    transition: 0.3s;
+
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+
+.sidebar{
+    position: fixed; 
+    /*This makes sure sidebar is separate from all other content*/
+
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index:999;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgb(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    justify-content: flex-start;
+
+    display: none;
+
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.sidebar a:hover{
+    background-color: rgba(0, 255, 68, 1);
+}
+
+/*///////////////////////////////// Navbar css ends here(except media query) ////////////////////////////*/
+
+.mid-section{
+    display: flex;
+    width: 100vw;
+}
+
+.mid-text{
+    width: auto;
+    padding: 70px 5vw;
+}
+
+.mid-text-box:hover{
+    background-color: rgba(0, 255, 68, 1);
+    transition: 0.3s;
+}
+.mid-text-box{
+    background-color: #A2A2A2;
+    width: 410px; <!-- 420px is the width of the text box, dont change -->
+    padding:  10px 20px;
+    border-radius: 20px;
+}
+
+.mid-text-box p{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    text-align: justify;
+    padding: 10px;
+}
+.heading-text{
+    font-family: 'Announcement', cursive;
+    font-size: 4rem;
+    text-align: center;
+    text-align: justify;
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 776px){
+    .hideOnMobile{
+        display: none;
+    }
+    
+    .mid-section{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
