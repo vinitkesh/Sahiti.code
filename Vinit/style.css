@@ -6,13 +6,12 @@
 }
 
 body{
-    min-width: 100vh;
+    max-width: 100vh;
     background-color: rgb(255, 255, 255);
 }
 
 nav{
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
-    display: block;
 }
 
 
@@ -72,7 +71,7 @@ nav li:first-child{
     width:250px;
     z-index:999;
     backdrop-filter: blur(10px);
-    box-shadow: -10px 0px 10px rgb(0, 0, 0, 0.1);
+    
 
     display: flex;
     flex-direction: column;
@@ -109,11 +108,15 @@ nav li:first-child{
 
 .mid-text-box:hover{
     background-color: rgba(0, 255, 68, 1);
+    box-shadow: -20px 0px 20px rgb(0, 0, 0, 0.1);
     transition: 0.3s;
+}
+.sidebar:hover{
+    
 }
 .mid-text-box{
     background-color: #A2A2A2;
-    width: 410px; <!-- 420px is the width of the text box, dont change -->
+    width: 410px;
     padding:  10px 20px;
     border-radius: 20px;
 }
@@ -155,12 +158,8 @@ nav li:first-child{
     .hideOnMobile{
         display: none;
     }
-    
     .mid-section{
-        width: 100vw;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        align-content: center;
     }
 }
