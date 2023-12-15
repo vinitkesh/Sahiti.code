@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahiti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#" class="menu-logo"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" class="sidebar-button">Events</a></li>
+            <li><a href="#" class="sidebar-button">Workshops</a></li>
+            <li><a href="#" class="sidebar-button">Competions</a></li>
+            <li><a href="#" class="sidebar-button">About</a></li>
+            
+        </ul>
+        <ul >
+            <li><a href="#" class="close" closemenu"><img src="./assets/LOGOtransparentWhite-removebg-preview 1.png" alt="" class="logo navbar-logo" style="height: 70px"></a></a></li>
+            <li><a href="#" class="hideOnMobile nav-button ">Events</a></li>
+            <li><a href="#" class="hideOnMobile nav-button ">Workshops</a></li>
+            <li><a href="#" class="hideOnMobile nav-button ">Competions</a></li>
+            <li><a href="#" class="hideOnMobile nav-button ">About</a></li>
+            <li onclick="showSidebar()"><a href="#" class="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+    <script>
+        function showSidebar(){
+            document.querySelector('.sidebar').style.display = 'flex';
+        }
+        function hideSidebar(){
+            document.querySelector('.sidebar').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
